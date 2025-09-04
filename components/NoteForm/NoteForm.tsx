@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import type { FormikHelpers } from "formik";
 import type { NoteFormValues } from "../../types/note";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { createNote } from "@/lib/api/noteService";
+import { createNote } from "@/lib/api";
 
 interface NoteFormProps {
   onClose: () => void;

@@ -10,7 +10,7 @@ import Modal from "@/components/Modal/Modal";
 import Pagination from "@/components/Pagination/Pagination";
 import SearchBox from "@/components/SearchBox/SearchBox";
 
-import { fetchNotes } from "@/lib/api/noteService";
+import { fetchNotes } from "@/lib/api";
 
 export default function NotesClient() {
   const [query, setQuery] = useState("");

@@ -1,4 +1,4 @@
-import { fetchNotes } from "@/lib/api/noteService";
+import { fetchNotes } from "@/lib/api";
 import {
   QueryClient,
   HydrationBoundary,
