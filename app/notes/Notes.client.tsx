@@ -4,13 +4,13 @@ import { useState } from "react";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { useDebouncedCallback } from "use-debounce";
 
-import NoteForm from "@/app/components/NoteForm/NoteForm";
-import NoteList from "@/app/components/NoteList/NoteList";
-import Modal from "@/app/components/Modal/Modal";
-import Pagination from "@/app/components/Pagination/Pagination";
-import SearchBox from "@/app/components/SearchBox/SearchBox";
+import NoteForm from "@/components/NoteForm/NoteForm";
+import NoteList from "@/components/NoteList/NoteList";
+import Modal from "@/components/Modal/Modal";
+import Pagination from "@/components/Pagination/Pagination";
+import SearchBox from "@/components/SearchBox/SearchBox";
 
-import { fetchNotes } from "@/app/lib/api/noteService";
+import { fetchNotes } from "@/lib/api/noteService";
 
 export default function NotesClient() {
   const [query, setQuery] = useState("");
